@@ -33,8 +33,9 @@ casper.then(function() {
     jobsRowNodes = this.evaluate(getJobRows);
 }).then(function () {
     jobsRowNodes.map((jobRowNode)=>{
-        console.log(jobRowNode.employer);
-        console.log(jobRowNode.position);
+        console.log('Employer::', jobRowNode.employer);
+        console.log('Position:',jobRowNode.position);
+        console.log('------------------------');
     })
 });
 
